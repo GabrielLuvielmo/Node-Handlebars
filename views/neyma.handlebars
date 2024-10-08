@@ -1,2 +1,14 @@
 <h1>CADE O NEYMA?</h1>
 <p>eu {{user.name}} que possui o email {{user.email}} e tenho {{user.age}} anos procuro por neyma!</p>
+
+{{#if approved}}
+    <p>Parabens, voce foi cadastrado!</p>
+{{else}}
+    <p>Dados para cadastro incorretos!</p>
+{{/if}}
+
+{{#if auth}}
+    <p>
+        você está autenticado,<a href="/peixe"> clique aqui</a> para acessar área de hóspedes
+    </p>
+{{/if}}
